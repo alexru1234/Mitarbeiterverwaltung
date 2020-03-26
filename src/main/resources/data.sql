@@ -1,0 +1,17 @@
+Insert into USER values (1101,'Vertrieb','jimdan@gmail.com','05-03-2010','Jimmy Danon');
+Insert into USER values (1102,'Vertrieb','schecht23@gmail.com','03-05-2010','Itay Shechtman');
+Insert into USER values (1103,'Vertrieb','mizrachi12an@gmail.com','03-05-2010','Anna Mizrachi');
+Insert into USER values (1201,'Lager','novodan@gmail.com','2010-08-24','Dana Novoseltsev');
+Insert into USER values (1202,'Lager','yanyael234@gmail.com','12-01-2010','Yael Yanon');
+Insert into USER values (1203,'Lager','sahalex34@gmail.com','06-06-2012','Ale Sahar');
+Insert into USER values (1204,'Lager','dimarlenorex@gmail.com','31-12-2011','Lenore di Maria');
+Insert into USER values (1205,'Lager','jbaruch@gmail.com','06-05-2011','Josie Baruch');
+Insert into USER values (1206,'Lager','djuko234@gmail.com','03-02-2012','Marek Djukovic');
+Insert into USER values (1207,'Lager','shirshim@gmail.com','01-12-2010','Shiry Shamesch');
+Insert into USER values (1208,'Lager','sharyeh@gmail.com','01-12-2011','Yeheli Sharek');
+Insert into USER values (1209,'Lager','abaron@gmail.com','01-12-2010','Alon Abar');
+Insert into USER values (1210,'Lager','anychev@gmail.com','06-01-2014','Anita Sychev');
+Insert into USER values (1301,'Geschaeftsfuehrung','antidze@gmail.com','01-01-2012','Anton Ananidze');
+Insert into USER values (1302,'Geschaeftsfuehrung','weizmarth345@gmail.com','26-11-2015','Martha Weizmann');
+Insert into USER values (1303,'Geschaeftsfuehrung','dikap789@gmail.com','03-12-2011','Diana Kaplan');
+Insert into USER values (1304,'Geschaeftsfuehrung','gold45berg@gmail.com','03-18-2010','John Goldberg');
