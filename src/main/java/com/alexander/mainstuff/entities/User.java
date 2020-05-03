@@ -12,27 +12,28 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    @NotBlank(message = "Bitte geben sie ihren Namen an")
+    
+    @NotBlank(message = "Wwedite russkoye nazvanie")
     private String name;
 
-    @NotBlank(message = "Bitte geben sie ihre Email an")
-    private String email;
+    @NotBlank(message = "Wwedite proiznoscheniye")
+    private String proiz_russian;
 
-    @NotBlank(message = "Bitte geben sie ihre Firmenabteilung an")
+    @NotBlank(message = "Wwedite ivritskoye nazvanie")
     private String department;
 
-    @NotBlank(message = "Bitte geben sie ihr Eintrittsdatum an")
-    private String entry_date;
+    @NotBlank(message = "Wwedite proiznoscheniye")
+    private String proiz_hebrew;
 
 
 
     public User() {}
 
-    public User(String name, String email, String department, String entry_date) {
+    public User(String name, String proiz_russian, String department, String proiz_hebrew) {
         this.name = name;
-        this.email = email;
+        this.proiz_russian = proiz_russian;
         this.department = department;
-        this.entry_date = entry_date;
+        this.proiz_hebrew = proiz_hebrew;
     }
 
     public long getId() {
@@ -51,12 +52,12 @@ public class User {
         this.name = name;
     }
 
-    public String getEmail() {
-        return email;
+    public String getProiz_russian() {
+        return proiz_russian;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setProiz_russian(String proiz_russian) {
+        this.proiz_russian = proiz_russian;
     }
 
     public String getDepartment() {
@@ -67,12 +68,12 @@ public class User {
         this.department = department;
     }
 
-    public String getEntry_date() {
-        return entry_date;
+    public String getProiz_hebrew() {
+        return proiz_hebrew;
     }
 
-    public void setEntry_date(String entry_date) {
-        this.entry_date = entry_date;
+    public void setProiz_hebrew(String proiz_hebrew) {
+        this.proiz_hebrew = proiz_hebrew;
     }
 
     @Override
@@ -80,9 +81,9 @@ public class User {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
+                ", email='" + proiz_russian + '\'' +
                 ", department='" + department + '\'' +
-                ", entry_date='" + entry_date + '\'' +
+                ", entry_date='" + proiz_hebrew + '\'' +
                 '}';
     }
 }

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/shards.min.css">
 </head>
 <body>
+  
 <div class="container my-5">
     <h2 class="mb-5">New Employee</h2>
     <div class="row">
@@ -17,36 +18,36 @@
             <form action="#" th:action="@{/adduser}" th:object="${user}" method="post">
                 <div class="row">
                     <div class="form-group col-md-6">
-                        <label for="name" class="col-form-label">Name</label>
-                        <input type="text" th:field="*{name}" class="form-control" id="name" placeholder="Name">
-                        <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="text-danger"></span>
+                        <label for="name" class="col-form-label">Russian Name</label>
+                        <input type="text" th:field="*{name_russian}" class="form-control" id="name" placeholder="Russian Name">
+                        <span th:if="${#fields.hasErrors('name_russian')}" th:errors="*{name_russian}" class="text-danger"></span>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="email" class="col-form-label">Email</label>
-                        <input type="email" th:field="*{email}" class="form-control" id="email" placeholder="Email">
-                        <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="text-danger"></span>
+                        <label for="email" class="col-form-label">Russian Pronounciation</label>
+                        <input type="email" th:field="*{proiz_russian}" class="form-control" id="email" placeholder="Russian pronounciation">
+                        <span th:if="${#fields.hasErrors('proiz_russian')}" th:errors="*{proiz_russian}" class="text-danger"></span>
                     </div>
 
                     <div class="form-group col-md-6">
-                        <label for="department" class="col-form-label">Abteilung</label>
-                        <select type="text" th:field="*{department}" class="form-control" id="department"  placeholder="Abteilung">
+                        <label for="department" class="col-form-label">Hebrew Name</label>
+                        <select type="text" th:field="*{department}" class="form-control" id="department"  placeholder="hebrew name">
                             <option value ="Vertrieb">Vertrieb</option>
                             <option value ="Geschaeftsfuehrung">Geschaeftsfuehrung</option>
                             <option value ="Lager">Lager</option>
 
                         </select>
 
-                        <span th:if="${#fields.hasErrors('name')}" th:errors="*{department}" class="text-danger"></span>
+                        <span th:if="${#fields.hasErrors('name_russian')}" th:errors="*{department}" class="text-danger"></span>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="entry_date" class="col-form-label">Einstiegsdatum</label>
-                        <input type="date" th:field="*{entry_date}" class="form-control" id="entry_date" placeholder="Einstiegdsatum">
-                        <span th:if="${#fields.hasErrors('email')}" th:errors="*{entry_date}" class="text-danger"></span>
+                        <label for="entry_date" class="col-form-label">Hebrew Pronounciation</label>
+                        <input type="text" th:field="*{proiz_hebrew}" class="form-control" id="entry_date" placeholder="hebrew pronunciation">
+                        <span th:if="${#fields.hasErrors('proiz_hebrew')}" th:errors="*{proiz_hebrew}" class="text-danger"></span>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 mt-5">
-                        <input type="submit" class="btn btn-primary" value="Mitarbeiter hinzufügen">
+                        <input type="submit" class="btn btn-primary" value="Add a word">
                     </div>
                 </div>
             </form>
